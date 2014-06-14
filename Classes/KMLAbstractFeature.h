@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "KMLAbstractObject.h"
-
+ 
 @class KMLAbstractView;
 @class KMLAbstractTimePrimitive;
 @class KMLRegion;
@@ -310,6 +310,10 @@
  @param value The value of the Data.
  */
 - (void)addExtendedDataWithName:(NSString *)name value:(NSString *)value;
+
+/// MTN additions
+/// obtain a style if is part of a StyleMap
+- (KMLStyle *)styleForState:(KMLStyleState)state;
 
 
 @end
